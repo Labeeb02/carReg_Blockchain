@@ -1,0 +1,13 @@
+syntax = "proto3";
+package carreg.carreg;
+
+option go_package = "carreg/x/carreg/types";
+
+message Ivc {
+  
+  string owner = 1; 
+  string vehicleNo = 2; 
+  string raSign = 3; 
+  string creator = 4; 
+  uint64 id = 5; 
+}

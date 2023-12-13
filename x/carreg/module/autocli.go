@@ -28,6 +28,12 @@ func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {
 					RpcMethod: "UpdateParams",
 					Skip:      true, // skipped because authority gated
 				},
+				{
+					RpcMethod:      "CreateIvc",
+					Use:            "create-ivc [owner] [vehicle-no] [ra-sign]",
+					Short:          "Send a create-ivc tx",
+					PositionalArgs: []*autocliv1.PositionalArgDescriptor{{ProtoField: "owner"}, {ProtoField: "vehicleNo"}, {ProtoField: "raSign"}},
+				},
 				// this line is used by ignite scaffolding # autocli/tx
 			},
 		},

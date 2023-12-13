@@ -18,3 +18,11 @@ var (
 func KeyPrefix(p string) []byte {
 	return []byte(p)
 }
+
+const (
+    IvcKey = "Ivc/value/"
+)
+
+const (
+    IvcCountKey = "Ivc/count/"
+)
